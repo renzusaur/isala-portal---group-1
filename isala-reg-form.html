@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Isala-Log-in and Registration</title>
+	<link rel="stylesheet" type="text/css" href="Reg-form.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+	<script>
+
+		function validate(){
+
+		var username = document.getElementById("usernme").value;
+		var pswrd = document.getElementById("userpswd").value;
+
+		if (username == "admin_123" && pswrd == "adminadmin"){
+			window.location.href='https://www.facebook.com/eveguel.arocha'
+			alert("Log in Successfully!");
+	        return false;
+		}
+
+		else{
+			alert("Login failed Please Try Again!");
+
+
+		}
+
+	}
+
+	</script>
+</head>
+<body>
+     <div class="hero">
+     	<form id="log-in" class="input-group">
+    			<P style="font-family: 'Rubik', sans-serif; font-size: 20px;"><b>First Name:</b></P>
+	    		<input type="text" id="userfname" placeholder=  "Firstname" required> <br>
+	    		<P style="font-family: 'Rubik', sans-serif; font-size: 20px; margin-top: 20px;"><b>Surname:</b></P>
+	    		<input type="text" id="usersurname" placeholder=  "Surname" required> <br>
+	    		<P style="font-family: 'Rubik', sans-serif; font-size: 20px; margin-top: 20px;"><b>Last Name:</b></P>
+	    		<input type="text" id="userlastname" placeholder=  "Last Name" required> <br>
+	    		<P style="font-family: 'Rubik', sans-serif; font-size: 20px; margin-top: 20px;"><b>Email ID:</b></P>
+	    		<input type="text" id="usereml" placeholder=  "Email ID" required> <br>
+	    		<P style="font-family: 'Rubik', sans-serif; font-size: 20px; margin-top: 20px;"><b>Student's LRN:</b></P>
+	    		<input type="number" id="userlrn" placeholder=  "Student's LRN" required> <br>
+	    		<p style="font-family: 'Rubik', sans-serif; font-size: 20px; margin-top: 20px;"><b>PASSWORD:</b></p>
+	    		<input type="Password" id="userpswd" placeholder="Enter Password" required>
+	    		<input type="checkbox" class="check-box" >    <span>Remember my Password</span>
+	    		<button type="submit" class="submit-btn" onclick="validate()">Sign up</button> <br>
+	    		<a href="Isala-index.html">
+	    		<button type="button" class="btn-back" onclick="back">Back</button>
+	    		</a>
+	    		<p style="font-size: 8px; display: inline-block; margin-top: 20px;"> © Copyright 2020 INTERNATIONAL SCHOOL OF THE ARTS,THE LANGUAGES, AND THE ACADEME- All Rights Reserved</p>	
+    		</form>
+     		<img class="gret" src="new-look.png">
+     	<div class="navir">
+		<nav id="navstick">
+		<img class="logo1" src="Isala-School-Logo.png">
+	<ul id="menu">
+		<li class="schoolname"><b>INTERNATIONAL SCHOOL OF THE ARTS, THE LANGUAGES, AND THE ACADEME</b></li>
+		<li class="nav"><a><b>Home</b></a></li>
+		<li class="nav"><a><b>Curiculum</b></a></li>
+		<li class="nav"><a><b>Maps</b></a></li>
+		<li class="nav"><a><b>Learning Materials</b></a></li>
+		<li class="nav"><a><b>About Us</b></a></li>
+   </ul>
+   <ul class="nav2">
+		<li><a><b>Contacts</b></a></li>
+		<li><a><b>More</b></a></li>
+		<li><a><b>Student Portal</b></a></li>
+		
+   </ul>
+   </nav>
+   </div>
+    	 <div class="form-box">
+    	 	<img class="logo2" src="isala-logo2.png">   
+    		 <div class="button-box">	
+    		 <h4> Student!</h4>
+    		</div>
+    		
+
+    	</div>
+
+    </div>
+    		<script> 
+
+
+
+    		</script>
+
+
+
+</body>
+</html>
