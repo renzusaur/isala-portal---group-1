@@ -1,56 +1,101 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Isala-Log-in and Registration</title>
-	<link rel="stylesheet" type="text/css" href="home-css.css">
-	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="logo.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="homepage.css" />
+    <title>
+      International School Of The Arts, The Languages, And The Academe
+    </title>
+    <script>
+      function Verify(frm) {
+        var username = document.getElementById("User").value;
+        var pswrd = document.getElementById("Pass").value;
+        var user = document.getElementById("User");
+        var pass = document.getElementById("Pass");
 
-	<script>
-		function validate(){
+        if (username == "admin" && pswrd == "admin") {
+          alert("Log in Successfully!");
+          user.style.borderColor = " green";
+          pass.style.borderColor = " green";
+        } else {
+          alert("Not Log in Successfully!");
+          user.style.borderColor = " #fe0000";
+          pass.style.borderColor = " #fe0000";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img id="Logo" src="logo.png" alt="Logo" width="40" height="40" />
+          <span
+            >INTERNATIONAL SCHOOL OF THE ARTS, THE LANGUAGES, AND THE
+            ACADEME</span
+          >
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active text-light d-inline" href="#">Home</a>
+            <li class="nav-item">
+              <a class="nav-link text-light d-inline" href="#">CurriculumMaps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light d-inline" href="#">LearningModules</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light d-inline" href="#">AboutUs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light d-inline" href="#">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light d-inline" href="#">More</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light d-inline" href="login.html">StudentPortal</a>
+            </li>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-		var username = document.getElementById("usernme").value;
-		var pswrd = document.getElementById("userpswd").value;
+     <form class="frm">
 
-		if (username == "admin_123" && pswrd == "adminadmin"){
-			alert("Log in Successfully!");
-	        return false;
-		}
+     	
+      <img class="img1" src="logo.png" alt="Bootstrap" />
+      <img class="img2" src="Title.PNG" alt="Bootstrap" />
 
-		else{
-			alert("Login failed Please Try Again!");
-		}
-
-	}
-	</script>
-</head>
-<body>
-     <div class="hero">
-     	<div class="navig">
-		<img class="logo1" src="Isala-School-Logo.png">
-	<ul>
-		<li class="schoolname"><b>INTERNATIONAL SCHOOL OF THE ARTS, THE LANGUAGES, AND THE ACADEME</b></li>
-		<li class="nav"><a><b>Home</b></a></li>
-		<li class="nav"><a><b>Curiculum</b></a></li>
-		<li class="nav"><a><b>Maps</b></a></li>
-		<li class="nav"><a><b>Learning Materials</b></a></li>
-		<li class="nav"><a><b>About Us</b></a></li>
-   </ul>
-   	<ul class="nav2">
-		<li><a><b>Contacts</b></a></li>
-		<li><a><b>More<b></a></li>
-		<li>
-			<a href="Isala-index.html" style="text-decoration: none; color: #ffffff;"><b>Student Portal</b></a>
-		</li>
-		
-   </ul>
-
-    </div>
-
-    	 <div class="form-box">
-    	 	<div class="contents">
+     	<div class="contents">
     	 		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmarietherese.caoile%2Fposts%2Fpfbid02F8yeu7t8BnfXCqxaNNggFZsGDCLrPzKPzpxPBvuPJUNuXpkeR2fgAmfsPzLhszXil&show_text=true&width=500" width="500" height="701" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
     	 		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FISALAOFFICIAL%2Fposts%2Fpfbid02BjCSe64Gumj6KcAyTweQAuD49kdz9UGrPb4Pk4c32UCXktsGaYkA9dKDDs8cvV24l&show_text=true&width=500" width="500" height="721" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
@@ -71,24 +116,17 @@
 
     	 		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FISALAOFFICIAL%2Fposts%2Fpfbid02RX43jfNk8UF2B4iyxqoTm2yDPfAffLwEiFTmacGSAMPtmi2zSg6kzm2o4JF8sHJNl&show_text=true&width=500" width="500" height="586" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
-    	 	
+
     	 		<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FISALAOFFICIAL%2Fvideos%2F1788018158255105%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 
     	 	</div>
-    	 	<br>
-    	 	<br>
-    	 	<br>
+     
+      <p>
+        Copyright &copy; 2020 INTERNATIONAL SCHOOL OF THE ARTS, <br />
+        LANGUAGES, AND THE ACADEME- All Rights Reserved
+      </p>
+    </form>
 
-	    		<p style="font-size: 12px; display: inline-block; margin-top: 20px; margin-left: 40px;"> © Copyright 2020 INTERNATIONAL SCHOOL OF THE ARTS,THE LANGUAGES, AND THE ACADEME- All Rights Reserved</p>	
-    		</form>
-
-    	</div>
-
-    </div>
     
-    	<a class="mess-logo" href="https://www.friv.com/">
-		<img src="mess-logo.png">
-		</a>
-
-</body>
+  </body>
 </html>

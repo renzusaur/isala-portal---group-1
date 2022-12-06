@@ -1,0 +1,130 @@
+body {
+  background-image: url(bg.jpg);
+
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Rubik", sans-serif;
+}
+.frm {
+  width: 1000px;
+  height: 600px;
+  top: 25%;
+  left: 50%;
+  margin-top: 200px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border: 2px solid #fe0000;
+  background-color: #fff;
+  border-radius: 50px;
+  overflow-y:scroll;
+}
+
+
+.frm::-webkit-scrollbar {
+  width: 12px;
+
+}
+.frm .form-label {
+  color: #000;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 15px;
+  margin-left: 43px;
+}
+.frm .form-control {
+  border: 1px solid #b4b2b2;
+  color: #000;
+  width: 84%;
+  height: 40px;
+  margin-left: 40px;
+  border-radius: 15px;
+  padding-left: 8px;
+  outline: none;
+  font-size: 13px;
+}
+#Logo {
+  margin-left: 5px;
+}
+span {
+  vertical-align: middle;
+  font-size: 10px;
+  color: #fff;
+}
+ul {
+  text-align: center;
+}
+li {
+  float: right;
+}
+.frm .img1 {
+  border-radius: 100%;
+  height: 95px;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.frm .img2 {
+  height: 105px;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.frm .form-check {
+  margin: 7px;
+  margin-left: 45px;
+  cursor: pointer;
+}
+.frm .form-check-label {
+  font-weight: 400;
+  font-size: 15px;
+}
+.frm #Login {
+  border: none;
+  background-color: #fe0000;
+  font-size: 18px;
+  font-weight: bold;
+  width: 41%;
+  height: 40px;
+  margin-left: 40px;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+.frm #Admin {
+  border: none;
+  background-color: #fe0000;
+  font-size: 18px;
+  font-weight: bold;
+  width: 41%;
+  height: 40px;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+.frm p {
+  color: black;
+  font-size: 7px;
+  margin-left: 35px;
+  margin-top: 30px;
+}
+.frm .click {
+  color: #000;
+  display: block;
+  font-size: 13px;
+  margin-left: 42px;
+  margin-top: 5px;
+  font-weight: 450;
+}
+.frm .forgotpass {
+  float: right;
+  margin-right: 35px;
+  font-size: 15px;
+}
+.frm .Reg {
+  margin-left: 5px;
+}
+
+.frm .contents{
+  text-align: center;
+  margin-top: 20px;
