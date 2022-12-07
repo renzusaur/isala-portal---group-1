@@ -8,8 +8,8 @@ body {
 }
 .frm {
   width: 600px;
-  height: 600px;
-  top: 25%;
+  height: 620px;
+  top: 27%;
   left: 50%;
   margin-top: 200px;
   transform: translate(-50%, -50%);
