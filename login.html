@@ -1,3 +1,10 @@
+<?php
+include_once('db-connect.php')
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,11 +33,13 @@
         var pswrd = document.getElementById("Pass").value;
         var user = document.getElementById("User");
         var pass = document.getElementById("Pass");
+        
 
-        if (username == "admin" && pswrd == "admin") {
+        if (username == "student" && pswrd == "student") {
           alert("Log in Successfully!");
           user.style.borderColor = " green";
           pass.style.borderColor = " green";
+          window.location.href = "portal.php"
         } else {
           alert("Not Log in Successfully!");
           user.style.borderColor = " #fe0000";
